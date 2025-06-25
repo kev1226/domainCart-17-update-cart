@@ -25,4 +25,4 @@ COPY --from=builder /app/update-cart .
 EXPOSE 3037
 
 # Ejecutar el binario
-CMD ["./add-cart"]
+CMD ["./update-cart"]
