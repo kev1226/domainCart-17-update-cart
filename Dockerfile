@@ -10,7 +10,7 @@ RUN go mod download
 COPY . .
 
 # Compilar el binario para Linux con enlaces estáticos
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o add-cart .
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o update-cart .
 
 # Etapa 2: Imagen final liviana
 FROM alpine:latest
